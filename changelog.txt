@@ -20,6 +20,5 @@
 	2. Added HypeExtension to repository
 
 
-
-TO DO:
+TODO:
 	1. Rollover effect [Done]

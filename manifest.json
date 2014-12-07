@@ -1,9 +1,9 @@
- {
-  "manifest_version": 2,
-  "name": "HypeMachine Extension",
-  "version": "1.44",
+{
+  "manifest_version": 3,
+  "name": "HypeMachine Downloader Extension",
+  "version": "2.0",
   "description": "Adds a download button to the HypeMachine page, making downloading songs simpler.",
-  "web_accessible_resources": ["hypestyles.css"],
+  "web_accessible_resources": [ "hypestyles.css" ],
   "background": {
     "page": "background.html"
   },
@@ -13,13 +13,13 @@
     "48": "./images/hype48.jpeg",
     "128": "./images/hype128.png"
   },
-  "permissions": ["tabs", "http://*/", "https://*/"],
-  "content_scripts":[
-  {
-	"matches": ["http://hypem.com/*", "https://hypem.com/*"], 
-	"css": ["hypestyles.css"],
-	"js": ["extension.js"],
-	"run_at": "document_end"
-  }
+  "permissions": [ "tabs", "http://*/", "https://*/" ],
+  "content_scripts": [
+    {
+      "matches": [ "http://hypem.com/*", "https://hypem.com/*" ],
+      "css": [ "hypestyles.css" ],
+      "js": [ "extension.js" ],
+      "run_at": "document_end"
+    }
   ]
 }
